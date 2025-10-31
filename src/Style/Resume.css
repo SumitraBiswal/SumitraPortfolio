@@ -1,0 +1,111 @@
+.resume-container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #f9f9ff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+
+ 
+}
+
+.resume-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #161e75;
+  margin-bottom: 2rem;
+}
+
+.resume-section {
+  margin-bottom: 2.5rem;
+}
+
+.resume-section h2 {
+  font-size: 1.5rem;
+  color: #093b86;
+  margin-bottom: 0.8rem;
+  border-left: 5px solid #137dd3;
+  padding-left: 10px;
+}
+
+.resume-section p {
+    color: #000000;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.resume-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.resume-section li {
+  margin-bottom: 0.7rem;
+}
+
+.small-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-grid ul {
+  width: 48%;
+}
+
+.project {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.project h3 {
+  color: #1056a5;
+  margin-bottom: 0.5rem;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #033465;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  background-color: #0d47a1;
+}
+
+.resume-button {
+  text-align: center;
+  margin-top: 2rem;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+@media (max-width: 768px) {
+  .skills-grid ul {
+    width: 100%;
+  }
+
+  .resume-container {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,178 @@
+.navbarcontainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 30px;
+  background-color: #000000; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  font-family: "Poppins", sans-serif;
+  z-index: 9999;
+}
+
+
+.sidebarlogo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  gap: 10px;
+  cursor: pointer;
+}
+.logoImg {
+  height: 70px;
+  width: auto;
+  right: 0;
+ 
+
+}
+
+.logoHightlight {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  color: rgb(224, 185, 59);
+  text-shadow: 0 0 6px rgba(0, 128, 255, 0.6);
+}
+
+
+
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+  padding-right: 60px;
+}
+
+.navlinks li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+.navlinks li a:hover {
+  color: #007bff; 
+}
+
+.activeLink {
+  color: #007bff !important; 
+  font-weight: 700;
+}
+
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menuButton:hover {
+  color: #007bff;
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9998;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background: #000;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  animation: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+.closeBtn {
+  align-self: flex-end;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.closeBtn:hover {
+  color: #007bff;
+}
+
+
+.sidebarNavlinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.sidebarNavlinks li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.sidebarNavlinks li a:hover {
+  color: #007bff;
+}
+
+
+@media (max-width: 850px) {
+  .navlinks {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .logoHightlight {
+    font-size: 1.2rem;
+  }
+
+  .logoImg {
+    height: 45px;
+  }
+}
