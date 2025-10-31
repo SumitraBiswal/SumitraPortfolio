@@ -99,7 +99,7 @@ p {
 }
 
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
   .overlay-content {
     flex-direction: column;
     position: fixed;
@@ -110,6 +110,9 @@ p {
     left: 50%;
     top: 50%;
    
+  }
+  .home-page{
+    width: 100%;
   }
 
   .profile-img {
@@ -126,7 +129,7 @@ p {
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 550px) {
@@ -157,6 +160,6 @@ p {
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }

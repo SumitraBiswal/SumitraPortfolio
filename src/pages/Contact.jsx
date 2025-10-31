@@ -27,31 +27,29 @@ export default function Contact() {
   };
 
   return (
-    <>
-      <div className={style.contactWrapper} id="contact">
-        {/* ✅ Map on Top */}
+    <div className={style.contactWrapper} id="contact">
+      <h2>Contact Us</h2>
+
+      <div className={style.contactContainer}>
+        {/* 🗺️ Map Section */}
         <div className={style.mapContainer}>
           <iframe
             title="Google Map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.392640723037!2d86.97004867470553!3d21.93999956050066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1f0017cc1eb0e3%3A0x8da3b0f1b2c8d7a8!2sSundargarh%2C%20Odisha%2C%20India!5e0!3m2!1sen!2sin!4v1698765432100!5m2!1sen!2sin"
-            width="100%"
-            height="350"
-            style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
 
-       
-        <h2>Contact Us</h2>
+        {/* 📩 Contact Form */}
         <form onSubmit={onSubmit} className={style.contactForm}>
           <label htmlFor="name">Your Name</label>
           <input type="text" id="name" name="name" placeholder="Enter your name" required />
 
           <label htmlFor="email">Email ID</label>
           <input type="email" id="email" name="email" placeholder="Enter your email" required />
-          
+
           <label htmlFor="phone">Phone Number</label>
           <input type="tel" id="phone" name="phone" placeholder="Enter your mobile number" required />
 
@@ -74,9 +72,9 @@ export default function Contact() {
             </svg>
           </button>
         </form>
-
-        {result && <p className={style.resultMessage}>{result}</p>}
       </div>
-    </>
+
+      {result && <p className={style.resultMessage}>{result}</p>}
+    </div>
   );
 }

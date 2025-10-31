@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 70px;
  
   padding: 0 80px;
   background-color: #fff;
@@ -43,11 +43,12 @@
   flex: 0 0 280px;
   display: flex;
   justify-content: center;
+  
 }
 
 .about-img {
   width: 250px;
-  height: 250px;
+  height:250px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
@@ -136,12 +137,12 @@
 
  .about-image {
     margin-bottom: 10px;
-    height: 100px;
+    height: 10px;
   }
 
   .about-img {
-    width: 180px;
-   height: 180px;
+    width: 220px;
+   height: 220px;
   }
 
   .about-content p {
